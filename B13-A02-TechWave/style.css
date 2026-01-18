@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.nav-img {
+    max-width: 219px;
+}
+
+#navbar {
+    background-color: #1A0B2E;
+}
+
+nav {
+    display: flex;
+    margin: 16px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 200px;
+}
+
+nav .nav-content ul {
+    display: flex;
+    gap: 32px;
+    color: white;
+}
+
+nav .nav-content li {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.menu-icon {
+    display: none;
+}
+
+.btn-gradient {
+    color: white;
+    background: linear-gradient(25deg, #fced31 0%, #f929be 50%, #8e18f9 100%);
+    border: none;
+    outline: none;
+    padding: 12.5px 16px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: inline-flex;
+    gap: 6.5px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-gradient:hover {
+    transform: translateY(5px);
+}
