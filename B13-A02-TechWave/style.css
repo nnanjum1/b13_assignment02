@@ -92,9 +92,9 @@ nav .nav-content li {
 }
 
 .section-text {
-    color: white;
+    color: rgba(250, 250, 250, 0.8);
     font-size: 16px;
-    font-weight: normal;
+    line-height: 1.6;
 }
 
 .banner-button {
@@ -141,4 +141,49 @@ nav .nav-content li {
 .btn-subscribe:hover,
 .btn-gradient:hover {
     transform: translateY(5px);
+}
+
+.about-podcast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A0B2E;
+    flex-direction: column;
+}
+
+.podcast-content {
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+}
+
+.line {
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    background-color: rgba(250, 250, 250, 0.1);
+    margin: 80px auto;
+    border: none;
+}
+
+.number {
+    color: #00FF88;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.extra-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    margin-bottom: 120px;
 }
