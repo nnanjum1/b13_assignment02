@@ -126,6 +126,8 @@ nav .nav-content li {
     cursor: pointer;
 }
 
+
+
 .new {
     position: absolute;
     top: 5%;
@@ -136,12 +138,32 @@ nav .nav-content li {
     background-color: #00FF88;
     border-radius: 30px;
     padding: 8px 16px;
+    animation: pulse-glow 2s infinite;
     border: none;
 }
 
-.btn-subscribe:hover,
-.btn-gradient:hover {
-    transform: translateY(5px);
+@keyframes pulse-glow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+        transform: translate(5px, -10px) scale(1) rotate(0deg);
+
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(0, 255, 136, 0);
+        transform: translate(5px, -10px) scale(1.05) rotate(5deg);
+
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+        transform: translate(5px, -10px) scale(1) rotate(0deg);
+    }
+}
+
+.btn-subscribe:hover {
+    background-color: #348964;
+
 }
 
 .about-podcast {
@@ -268,6 +290,7 @@ nav .nav-content li {
 
 .video-container {
     margin-top: 40px;
+    margin-bottom: 120px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -306,4 +329,82 @@ nav .nav-content li {
     font-size: 16px;
     font-weight: 600;
     color: #00FF88;
+}
+
+.meet-host {
+    background-color: #250D44;
+    border-radius: 30px;
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.host-title {
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+}
+
+.host-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.social-media {
+    display: flex;
+    gap: 8px;
+}
+
+.social-media-icon {
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+}
+
+.social-media-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    width: 100%;
+    background: url(./assets/footer-bg.png);
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 8px;
 }
