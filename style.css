@@ -11,7 +11,12 @@
 
 .nav-img {
     max-width: 219px;
+
 }
+
+
+
+
 
 #navbar {
     background-color: #1A0B2E;
@@ -84,6 +89,17 @@ nav .nav-content li {
 
 .microphone {
     position: absolute;
+    animation: microtation 4s linear infinite;
+}
+
+@keyframes microtation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .banner-title {
@@ -138,11 +154,12 @@ nav .nav-content li {
     background-color: #00FF88;
     border-radius: 30px;
     padding: 8px 16px;
-    animation: pulse-glow 2s infinite;
+    animation: newbtnanimation 2s infinite;
     border: none;
+    outline: 0;
 }
 
-@keyframes pulse-glow {
+@keyframes newbtnanimation {
     0% {
         box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
         transform: translate(5px, -10px) scale(1) rotate(0deg);
@@ -396,7 +413,7 @@ nav .nav-content li {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 150px 120px 1fr;
     align-items: center;
     justify-content: center;
     text-align: center;
