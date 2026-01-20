@@ -432,7 +432,7 @@ nav .nav-content li {
     gap: 8px;
 }
 
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 991px) {
 
     nav .nav-content ul,
     #navbar .btn-gradient {
@@ -512,7 +512,8 @@ nav .nav-content li {
     .card-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        margin: auto 12.5%;
+        margin: auto auto;
+        width: 90%;
 
     }
 
@@ -554,7 +555,8 @@ nav .nav-content li {
 
 
 
-    .host {
+    .host .section-title {
+        margin-top: 120px;
         margin-bottom: 40px;
     }
 
@@ -794,14 +796,23 @@ nav .nav-content li {
     }
 
 
+
     .video-container {
-        margin: 40px auto;
+        margin: 60px auto;
+        padding-bottom: 120px;
         gap: 20px;
-        align-items: center;
+
         width: 100%;
         max-width: 1200px;
         height: auto;
-        align-items: start;
+        align-items: stretch;
+    }
 
+    .host .section-title {
+        margin-top: 120px;
+    }
+
+    .meet-host {
+        margin-top: 40px;
     }
 }
