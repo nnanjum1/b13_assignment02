@@ -16,18 +16,15 @@
 
 
 
-
-
 #navbar {
     background-color: #1A0B2E;
 }
 
 nav {
     display: flex;
-    padding: 16px auto;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 200px;
+    padding: 24px 12.5%;
 }
 
 nav .nav-content ul {
@@ -323,7 +320,7 @@ nav .nav-content li {
 .video-frame {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height: 214px;
+    height: 100%;
     width: 100%;
     border: none;
 
@@ -425,6 +422,156 @@ nav .nav-content li {
     gap: 8px;
 }
 
+@media (min-width: 576px) and (max-width: 992px) {
+
+    nav .nav-content ul,
+    #navbar .btn-gradient {
+        display: none;
+    }
+
+    nav {
+        padding: 24px 50px;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: flex
+    }
+
+    .banner {
+        width: 100%;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .banner-images {
+        width: 100%;
+        max-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        align-items: center;
+        margin: 0px auto;
+
+    }
+
+    .banner-images .circle {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+
+    .microphone img {
+        width: 100%;
+        height: auto;
+        max-width: 80px;
+        max-height: 80px;
+
+    }
+
+    .extra-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        margin: 16px 20px 40px 20px;
+
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5 {
+        grid-row: auto;
+        grid-column: auto;
+        padding: 24px;
+        background-color: #351165;
+        border-radius: 24px;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features-episodes {
+        align-items: center;
+        padding: 40px 20px 40px 20px;
+    }
+
+    .video-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 60px auto;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+    }
+
+    .video-text {
+        padding: 20px;
+    }
+
+
+
+    .host {
+        margin-bottom: 40px;
+    }
+
+    .meet-host {
+        padding-bottom: 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-media {
+        margin: 24px auto;
+    }
+
+    .footer {
+        width: 100%;
+        background-size: 100% 100%;
+        background-position: center;
+        padding: 40px 0;
+    }
+
+
+    .footer-logo {
+        width: 100%;
+        max-width: 219px;
+    }
+
+    .footer-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+
+    }
+
+
+}
+
+
 @media screen and (max-width: 576px) {
 
     nav .nav-content ul,
@@ -472,6 +619,12 @@ nav .nav-content li {
         max-width: 80px;
         max-height: 80px;
 
+    }
+
+    .new {
+        top: 5%;
+        left: 65%;
+        font-size: 16px;
     }
 
     .section-title {
